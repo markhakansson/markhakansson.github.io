@@ -12,7 +12,8 @@ When working with breakpoints in an embedded Rust application. You might write y
 the following [RTIC](https://rtic.rs/) task
 {% highlight rust %}
 [#task]
-fn task(\_cx: task::Context) {
+fn task(cx: task::Context) {
+    /* Some work here... */
     asm::bkpt();
 }
 {% endhighlight %}
